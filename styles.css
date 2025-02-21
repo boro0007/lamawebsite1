@@ -1,0 +1,257 @@
+
+
+
+.carousel-item img {
+    opacity: 1; /* Adjust the opacity (0.1 to 1) */
+}
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+}
+
+
+/* General Button Styling */
+.stylish-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 8px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: auto; /* Adjust width dynamically */
+  max-width: 250px; /* Prevents it from getting too large */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .stylish-btn {
+      font-size: 14px; /* Smaller font on mobile */
+      padding: 10px 18px; /* Reduce padding */
+      max-width: 180px; /* Prevents oversized buttons */
+  }
+}
+
+@media (max-width: 480px) {
+  .stylish-btn {
+      font-size: 12px;
+      padding: 8px 14px;
+      max-width: 150px;
+  }
+}
+
+/* WhatsApp (Book Now) Button */
+.whatsapp-btn {
+  background: linear-gradient(45deg, #25D366, #128C7E);
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.5);
+}
+
+/* Call (Call Now) Button */
+.call-btn {
+  background: linear-gradient(45deg, #FF5722, #D84315);
+}
+
+.call-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 87, 34, 0.5);
+}
+
+/* Icon Styling */
+.stylish-btn i {
+  font-size: 24px;
+}
+
+/* Reduce Icon Size for Small Screens */
+@media (max-width: 480px) {
+  .stylish-btn i {
+      font-size: 18px;
+  }
+}
+
+
+
+.title{
+
+    color: yellow;
+    font-weight: bold;
+    text-shadow: 1px -1px 0 black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+    font-style: italic;
+}
+
+/* Make the carousel text responsive */
+.carousel-caption {
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+}
+
+/* Title (h5) - Responsive */
+.carousel-caption .title {
+  font-size: 2.5vw; /* Adjusting size based on viewport */
+  font-weight: bold;
+}
+
+/* Main Heading (h1) - Responsive */
+.carousel-caption .desc {
+  font-size: 4vw; /* Scaling dynamically */
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+
+
+/* Media Query for smaller screens (tablets & phones) */
+@media (max-width: 768px) {
+  .carousel-caption {
+      width: 90%;
+      bottom: 10%;
+  }
+  .carousel-caption .title {
+      font-size: 2vw; /* Decrease title size */
+  }
+  .carousel-caption .desc {
+      font-size: 3vw; /* Decrease description size */
+  }
+ 
+}
+
+/* Media Query for very small screens (mobile) */
+@media (max-width: 480px) {
+  .carousel-caption .title {
+      font-size: 2vw;
+  }
+  .carousel-caption .desc {
+      font-size: 3vw;
+  }
+
+}
+
+
+.icon-img {
+    width: 80px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card {
+    text-align: center;
+    background: none;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: scale(1.09);
+}
+
+.zoom-effect {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover{ transform: scale(1.09);
+
+  }
+  
+  .card {
+    min-width: 500px;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .card h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  .card p {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  #click {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      min-width: 200px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      min-width: 150px;
+    }
+  }
+
+
+  .social-icon {
+    color: #007bff; /* Bootstrap primary color */
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
